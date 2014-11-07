@@ -16,7 +16,7 @@ x$datetime <- as.POSIXct(datetime)
 plot(x$Sub_metering_1~x$datetime, type="l", ylab="Energy Sub Metering")
 lines(x$Sub_metering_2~x$datetime, col="orange")
 lines(x$Sub_metering_3~x$datetime, col="blue")
-legend("topright", col=c("black", "orange", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", col=c("black", "orange", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=1)
 
 dev.copy(png, file="plot3.png", height=480, width=480)
 dev.off()
